@@ -8,7 +8,7 @@
 	
 	<div th:each = "review: ${reviews}">
 	<em>Below are reviews of some spectacular travel destinations in Kenya.</em>	
-	    <p>Hotel Name: <span th:text = "${review.name}"></span></p>
+	    <p>Destination: <span th:text = "${review.name}"></span></p>
 		<p>Review Category: <span th:text = "${review.category}"></span></p>
 		<p>Review: <span th:text = "${review.title}"></span></p>
 		<img th:src= "${review.imgUrl}" ></img>
